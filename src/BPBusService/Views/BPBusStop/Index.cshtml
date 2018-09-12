@@ -1,0 +1,59 @@
+@model IEnumerable<BPBusService.Models.BusStop>
+
+@{
+    ViewData["Title"] = "Bus Stop Listing";
+}
+
+<h2>Bus Stop Listing</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.ActionLink("busStopNumber", "", new { orderBy = "busStopNumber" })
+            </th>
+            <th>
+                @Html.ActionLink("location", "", new { orderBy = "location" })
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoingDowntown)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationHash)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-action="RouteSelector" asp-route-busStopNumber="@item.BusStopNumber">
+                    @item.BusStopNumber
+                </a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GoingDowntown)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationHash)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BusStopNumber">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BusStopNumber">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BusStopNumber">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

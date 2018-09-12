@@ -1,0 +1,56 @@
+@model IEnumerable<BPBusService.Models.BusRoute>
+
+@{
+    ViewData["Title"] = "Bus Route Listing";
+}
+
+<h2>Bus Route Listing</h2>
+
+@if (User.IsInRole("administrators") || User.IsInRole("staff"))
+{
+    <p>
+        <a asp-action="Create">Add route</a>   
+    </p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RouteName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BusRouteCode)
+            </th>
+        </tr>
+        
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(item.RouteName, "", "BPRouteStop", new { busRouteCode = item.BusRouteCode, routeName = item.RouteName }, null)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BusRouteCode)
+            </td>
+            <td>
+                @Html.ActionLink("Schedule", "Index","BPRouteSchedule", new { busRouteCode = item.BusRouteCode, routeName = item.RouteName }, null)
+            </td>
+            <td>
+                @if (User.IsInRole("administrators") || User.IsInRole("staff"))
+                {
+                    <a asp-action="Edit" asp-route-id="@item.BusRouteCode">Edit</a> <text>|</text>
+                }
+                
+                <a asp-action="Details" asp-route-id="@item.BusRouteCode">Details</a> |
+                @if (User.IsInRole("administrators") || User.IsInRole("staff"))
+                {
+                    <a asp-action="Delete" asp-route-id="@item.BusRouteCode">Delete</a> <text>|</text>
+                }       
+               
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

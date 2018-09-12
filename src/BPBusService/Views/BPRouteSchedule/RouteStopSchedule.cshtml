@@ -1,0 +1,45 @@
+@model IEnumerable<BPBusService.Models.RouteSchedule>
+
+@{
+    ViewData["Title"] = "Schedule for" + " " + Context.Request.Cookies["busRouteCode"] + "-" + Context.Request.Cookies["routeName"];
+
+    ViewData["Stop"] = $"Stop: {Context.Request.Cookies["busStopNumber"]}";
+    ViewData["Route"] = $"Route: {Context.Request.Cookies["busRouteCode"]} - {Context.Request.Cookies["routeName"]}";
+}
+
+
+
+<h2>@ViewData["Stop"]</h2>
+
+<h3>@ViewData["Route"]</h3>
+
+
+
+<h3>Mon - Fri</h3>
+
+    @foreach (var item in Model)
+    {
+        @if (item.IsWeekDay)
+        {
+            <ul>
+                <li>
+                    @Html.DisplayFor(modelItem => item.StartTime)
+                </li>
+            </ul>
+        }
+    }
+
+
+<h3>Sat - Sun & Holidays</h3>
+
+    @foreach (var item in Model)
+    {
+        @if (!item.IsWeekDay)
+        {
+            <ul>
+                <li>
+                    @Html.DisplayFor(modelItem => item.StartTime)
+                </li>
+            </ul>
+        }
+    }

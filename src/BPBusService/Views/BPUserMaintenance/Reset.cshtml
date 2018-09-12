@@ -1,0 +1,26 @@
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+@model IdentityUser
+
+@{
+    ViewBag.Title = "Reset Password";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm("ResetConfirmed", "BPUserMaintenance"))
+{
+    <p>
+        @Html.LabelFor(model => model.UserName)
+        @Html.DisplayFor(model => model.UserName) <br />
+        @Html.HiddenFor(model => Model.UserName)
+        @Html.Label("New Password")
+        @Html.Password("newPassword") <br />
+        @Html.Label("Confirm Password")
+        @Html.Password("confirmedPassword") <br />
+        <input type="submit" value="Change Password" class="btn btn-default" />
+    </p>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

@@ -1,0 +1,9 @@
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPClassLibrary\bin\Debug\netstandard1.6\BPClassLibrary.deps.json
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPClassLibrary\bin\Debug\netstandard1.6\BPClassLibrary.dll
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPClassLibrary\bin\Debug\netstandard1.6\BPClassLibrary.pdb
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPClassLibrary\obj\Debug\netstandard1.6\BPClassLibrary.csprojResolveAssemblyReference.cache
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPClassLibrary\obj\Debug\netstandard1.6\BPClassLibrary.csproj.CoreCompileInputs.cache
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPClassLibrary\obj\Debug\netstandard1.6\BPClassLibrary.AssemblyInfoInputs.cache
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPClassLibrary\obj\Debug\netstandard1.6\BPClassLibrary.AssemblyInfo.cs
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPClassLibrary\obj\Debug\netstandard1.6\BPClassLibrary.dll
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPClassLibrary\obj\Debug\netstandard1.6\BPClassLibrary.pdb

@@ -1,0 +1,41 @@
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+@model IEnumerable<IdentityRole>
+
+@{
+    ViewBag.Title = "Roles";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm("Create", "BPRoleMaintenance", FormMethod.Post))
+{
+    <p>
+        @Html.Label("Role ")
+        @Html.TextBox("roleToAdd")
+        <input type="submit" value="Create" class="btn btn-default" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @if (item.Name != "administrators")
+                {
+                    @Html.ActionLink("Delete", "Delete", new { roleId = item.Id }) <text>|</text>
+                }
+                @Html.ActionLink("Manage Users", "Manage", new { roleId = item.Id })
+            </td>
+        </tr>
+    }
+</table>

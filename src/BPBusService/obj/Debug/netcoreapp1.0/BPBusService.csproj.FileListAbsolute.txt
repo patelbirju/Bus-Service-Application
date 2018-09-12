@@ -1,0 +1,14 @@
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\bin\Debug\netcoreapp1.0\BPBusService.deps.json
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\bin\Debug\netcoreapp1.0\BPBusService.runtimeconfig.json
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\bin\Debug\netcoreapp1.0\BPBusService.runtimeconfig.dev.json
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\bin\Debug\netcoreapp1.0\BPBusService.dll
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\bin\Debug\netcoreapp1.0\BPBusService.pdb
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\bin\Debug\netcoreapp1.0\BPClassLibrary.dll
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\bin\Debug\netcoreapp1.0\BPClassLibrary.pdb
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\obj\Debug\netcoreapp1.0\BPBusService.csprojResolveAssemblyReference.cache
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\obj\Debug\netcoreapp1.0\BPBusService.csproj.CoreCompileInputs.cache
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\obj\Debug\netcoreapp1.0\UserSecretsAssemblyInfo.cs
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\obj\Debug\netcoreapp1.0\BPBusService.AssemblyInfoInputs.cache
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\obj\Debug\netcoreapp1.0\BPBusService.AssemblyInfo.cs
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\obj\Debug\netcoreapp1.0\BPBusService.dll
+G:\BPUsersAndRoles-20171026T173015Z-001\BPUsersAndRoles\BPBusService\src\BPBusService\obj\Debug\netcoreapp1.0\BPBusService.pdb

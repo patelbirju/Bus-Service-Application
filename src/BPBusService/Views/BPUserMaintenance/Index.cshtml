@@ -1,0 +1,59 @@
+@model IEnumerable<BPBusService.Models.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Manage Users";
+}
+
+<h2>@ViewBag.title</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th> 
+            <th>
+                @Html.DisplayNameFor(model => model.LockoutEnabled)
+            </th>
+            <th>
+                Authentication Type
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.LockoutEnabled)
+            </td>
+            <td>
+
+            </td>
+            
+            <td>
+                @if (item.LockoutEnabled)
+                {
+                    @Html.ActionLink("Unlock", "LockUnlock", new { userId = item.Id }) <text> | </text>
+                }
+                else
+                {
+                    @Html.ActionLink("Lock", "LockUnlock", new { userId = item.Id }) <text> | </text>
+}
+                @Html.ActionLink("Delete","Delete", new { userId = item.Id }) <text> | </text>
+                @Html.ActionLink("Reset Password", "Reset", new { userId = item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
